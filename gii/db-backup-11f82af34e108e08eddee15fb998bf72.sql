@@ -75,7 +75,7 @@ CREATE TABLE `division` (
   `description` text NOT NULL,
   `status` int(11) NOT NULL,
   PRIMARY KEY (`id_division`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 INSERT INTO division VALUES("1","Divisi Fashion","Divisi Fashion","1"),
 ("2","Divisi Furniture","Divisi Furniture","1"),
@@ -182,12 +182,13 @@ CREATE TABLE `setting` (
   `twitter` varchar(150) NOT NULL,
   `status` int(11) NOT NULL,
   PRIMARY KEY (`id_site`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 INSERT INTO setting VALUES("1","IOFFICIAL","Sebuah portal digital di Kabupaten Bandung yang dibangun dengan berlandaskan pada 3 aspek utama, yaitu; Lokal, Kreatif, dan Kolektif.","lokolektif, lokal, kreatif, kolektif, kabupaten bandung, kabupaten bandung barat, kabupaten bandung timur, kabupaten bandung selatan,","lokolektif.JPG","1.jpg","Ciburial Timur RT:06/RW:06 Kec. Soreang Kab. Bandung","089525692769","info@lokolektif.com","https://www.facebook.com/lokolektif.kab/","https://www.instagram.com/lokolektif.kab","https://twitter.com/lokolektif","1"),
 ("2","WEFAY","Mengembangkan bisnis melalui ekosistem IT, menghadirkan inovasi solusi yang terintegrasi.","wefay, apps, mobile, web","2.jpg","2.png","Jl. Raya Sorekarno Hatta No.46 Bandung","087824931504","info@wefay.com","wefaycorp","wefaycorp","wefaycorp","1"),
 ("3","BASCOM","Barudak Seni Computer (PKN & STMIK LPKIA Bandung)","lokolektif, lokal, kreatif, kolektif, kabupaten bandung, kabupaten bandung barat, kabupaten bandung timur, kabupaten bandung selatan,","bascom.JPG","1.jpg","Ciburial Timur RT:06/RW:06 Kec. Soreang Kab. Bandung","089525692769","info@lokolektif.com","https://www.facebook.com/lokolektif.kab/","https://www.instagram.com/lokolektif.kab","https://twitter.com/lokolektif","1"),
-("4","REGAL 036","Regal Group Official","lokolektif, lokal, kreatif, kolektif, kabupaten bandung, kabupaten bandung barat, kabupaten bandung timur, kabupaten bandung selatan,","lokolektif.JPG","","Ciburial Timur RT:06/RW:06 Kec. Soreang Kab. Bandung","0895256927695","info@lokolektif.com","https://www.facebook.com/lokolektif.kab/s3","https://www.instagram.com/lokolektif.kabs","https://twitter.com/lokolektifss","0");
+("4","REGAL 036","Regal Group Official","lokolektif, lokal, kreatif, kolektif, kabupaten bandung, kabupaten bandung barat, kabupaten bandung timur, kabupaten bandung selatan,","lokolektif.JPG","","Ciburial Timur RT:06/RW:06 Kec. Soreang Kab. Bandung","0895256927695","info@lokolektif.com","https://www.facebook.com/lokolektif.kab/s3","https://www.instagram.com/lokolektif.kabs","https://twitter.com/lokolektifss","0"),
+("5","Komunitas Barbara","","","","","Jl. Jakarta No.5 Bandung","0588859859898","barbara@community.com","","","","1");
 
 
 
@@ -211,12 +212,12 @@ CREATE TABLE `user` (
   `active` int(11) DEFAULT NULL,
   `status` int(2) DEFAULT '0',
   PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 INSERT INTO user VALUES("1","2017-05-17 03:19:02","2017-05-17 03:19:02","2017-05-20 12:58:35","Mugi Rachmat","","2017-05-17","infomugi@gmail.com","infomugi","21232f297a57a5a743894a0e4a801fc3","1","0","infomugi.jpg","0","0","0"),
 ("2","2017-05-17 03:19:30","2017-05-17 03:19:30","2017-05-20 10:42:12","Andi Saputra","","2017-05-17","andi@gmail.com","admin","21232f297a57a5a743894a0e4a801fc3","2","0","avatar.png","0","1","0"),
 ("3","2017-05-17 03:21:13","2017-05-17 03:21:13","2017-05-17 03:21:13","Sandi Auliya","","2017-05-17","sandi@gmail.com","sandi","21232f297a57a5a743894a0e4a801fc3","3","0","avatar.png","0","0","0"),
-("4","2017-05-17 03:21:51","2017-05-17 03:21:51","2017-05-17 03:21:51","Rahman Sitaringa","","2017-05-17","rahman@gmail.com","rahman","21232f297a57a5a743894a0e4a801fc3","3","0","avatar.png","0","0","0"),
+("4","","","","","","","","","","","","","","",""),
 ("5","2017-05-17 03:22:16","2017-05-17 03:22:16","2017-05-17 08:35:51","Wahyu Wiwoho","","2017-05-17","wahyu@gmail.com","wahyu","21232f297a57a5a743894a0e4a801fc3","3","0","avatar.png","0","0","0"),
 ("6","2017-05-18 07:22:21","2017-05-18 07:22:21","2017-05-18 07:22:21","Abudin","","2017-05-18","abudin@gmail.com","abudin","21232f297a57a5a743894a0e4a801fc3","3","0","avatar.png","0","0","0");
 
