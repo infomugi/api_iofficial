@@ -1,0 +1,581 @@
+{
+	"id": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+	"name": "IOfficial BukaLapak",
+	"description": "API Aplikasi IOfficial BukaLapak Mobile Competition.",
+	"order": [],
+	"folders": [
+		{
+			"id": "4a582a85-1eec-485e-f5c5-6f3e348e3db5",
+			"name": "API Community",
+			"description": "Management User Member",
+			"order": [
+				"99b1fe5e-6942-0b50-b7b9-92ad9fdaeec8",
+				"0dc6901d-07f3-1de1-6fcd-c4d131de3951",
+				"ba1e4162-ef19-f721-c4b3-e3db6c029f57",
+				"804b194a-6244-82dd-deab-41ee5db98207",
+				"b3e45931-9308-45ff-1dc4-46ca9b55dc3f",
+				"c1681040-6f14-2caa-e03e-b7477a3d76be",
+				"77d6a22b-06de-501c-f618-2b54cbbf7f7e"
+			],
+			"owner": "",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d"
+		},
+		{
+			"id": "8e63b526-955d-4cdc-f99b-1302758180db",
+			"name": "API User",
+			"description": "Management User Member",
+			"order": [
+				"c4c6117d-2808-8a09-e56a-19b2eeb8e587",
+				"aee25ea6-c4c0-b32e-0f41-6824beac37f0",
+				"29f64b47-d15a-11bf-b738-2312909c1af6",
+				"04558c65-18ad-d13e-e374-1230c31bb3e2",
+				"e2f06cf5-2d1a-a568-a590-e1fc36f291b4",
+				"7e10acd7-4bf0-7d25-2c55-e0829fc27d3d",
+				"d979c688-badd-cf84-fa81-2196ea581b41",
+				"ba59c96d-bf30-49d6-2cf9-d2e86d2d6032",
+				"0b513a76-5cc1-8464-6b37-b172b98889f1",
+				"15cb03ef-ff35-fabb-ebf5-5d5fe104965f"
+			],
+			"owner": ""
+		}
+	],
+	"timestamp": 1495344345032,
+	"owner": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "04558c65-18ad-d13e-e374-1230c31bb3e2",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/user/search",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "limit",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "keyword",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495346168718,
+			"name": "User: Search (Member)",
+			"description": "Mencari Data Member dari Komunitas",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "04558c65-18ad-d13e-e374-1230c31bb3e2",
+			"folder": "8e63b526-955d-4cdc-f99b-1302758180db"
+		},
+		{
+			"id": "0b513a76-5cc1-8464-6b37-b172b98889f1",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/user/listUser",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "limit",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495346656164,
+			"name": "User: List Member (Start, Limit)",
+			"description": "Menampilkan data member dengan inisiasi awal dan limit",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": [],
+			"folder": "8e63b526-955d-4cdc-f99b-1302758180db"
+		},
+		{
+			"id": "0dc6901d-07f3-1de1-6fcd-c4d131de3951",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/community/search",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "limit",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "keyword",
+					"value": "ba",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495347901850,
+			"name": "Community: Search",
+			"description": "Mencari Data Komunitas berdasarkan nama Komunitas",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": []
+		},
+		{
+			"id": "15cb03ef-ff35-fabb-ebf5-5d5fe104965f",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/user/index",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495346648268,
+			"name": "User: List Member (Full)",
+			"description": "Menampilkan semua data member komunitas",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "15cb03ef-ff35-fabb-ebf5-5d5fe104965f",
+			"folder": "8e63b526-955d-4cdc-f99b-1302758180db"
+		},
+		{
+			"id": "29f64b47-d15a-11bf-b738-2312909c1af6",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/user/signup",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "username",
+					"value": "adminss",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "admins",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fullname",
+					"value": "Jajang",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "jajang@gmail.com",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495345265095,
+			"name": "User: Signup (Register)",
+			"description": "Login Member ke Aplikasi dengan Menggunakan Username & Password",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": [],
+			"folder": "8e63b526-955d-4cdc-f99b-1302758180db"
+		},
+		{
+			"id": "77d6a22b-06de-501c-f618-2b54cbbf7f7e",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/community/index",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495347607410,
+			"name": "Community: List (Full)",
+			"description": "Menampilkan data daftar komunitas",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": []
+		},
+		{
+			"id": "7e10acd7-4bf0-7d25-2c55-e0829fc27d3d",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/user/delete",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "id_user",
+					"value": "7",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495346342915,
+			"name": "User: Delete (Member)",
+			"description": "Menghapus Data Member dari Tabel User",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": [],
+			"folder": "8e63b526-955d-4cdc-f99b-1302758180db"
+		},
+		{
+			"id": "804b194a-6244-82dd-deab-41ee5db98207",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/community/edit",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "id_community",
+					"value": "6",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495347859968,
+			"name": "Community: Edit",
+			"description": "Menghapus Data Community dari Tabel Setting",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": []
+		},
+		{
+			"id": "99b1fe5e-6942-0b50-b7b9-92ad9fdaeec8",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/community/signup",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "Realmadrid Fans Club Bandung",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "Jl. Banda No.55 Bandung",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "halamadrid@community.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone",
+					"value": "0574959754975",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495347587833,
+			"name": "Community: Signup",
+			"description": "Registrasi Komunitas",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": []
+		},
+		{
+			"id": "aee25ea6-c4c0-b32e-0f41-6824beac37f0",
+			"headers": "email: andi@gmail.com\nContent-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/user/checkEmail",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "email",
+					"value": "infomugis@gmail.com",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495344435472,
+			"name": "User: Cek Email",
+			"description": "Cek Email Pendaftaran apakah Sudah di Pakai ?",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": [],
+			"folder": "8e63b526-955d-4cdc-f99b-1302758180db"
+		},
+		{
+			"id": "b3e45931-9308-45ff-1dc4-46ca9b55dc3f",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/community/view",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "id_community",
+					"value": "6",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495347819567,
+			"name": "Community: Detail",
+			"description": "Menghapus Data Member dari Tabel User",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": []
+		},
+		{
+			"id": "ba1e4162-ef19-f721-c4b3-e3db6c029f57",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/community/delete",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "id_community",
+					"value": "6",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495347903164,
+			"name": "Community: Delete",
+			"description": "Menghapus Data Member dari Tabel User",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": []
+		},
+		{
+			"id": "ba59c96d-bf30-49d6-2cf9-d2e86d2d6032",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/user/view",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "id_user",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495346487409,
+			"name": "User: Detail Member)",
+			"description": "Menghapus Data Member dari Tabel User",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": [],
+			"folder": "8e63b526-955d-4cdc-f99b-1302758180db"
+		},
+		{
+			"id": "c1681040-6f14-2caa-e03e-b7477a3d76be",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/community/listCommunity",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "limit",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "start",
+					"value": "0",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495347678456,
+			"name": "Community: List (Start, Limit)",
+			"description": "Menampilkan data komunitas dengan inisiasi awal dan limit",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": []
+		},
+		{
+			"id": "c4c6117d-2808-8a09-e56a-19b2eeb8e587",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/user/login",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "id_user",
+					"value": "7",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "admins",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fullname",
+					"value": "Jajang",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "jajang@gmail.com",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495344452869,
+			"name": "User: Login",
+			"description": "Login Member ke Aplikasi dengan Menggunakan Username & Password",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "c4c6117d-2808-8a09-e56a-19b2eeb8e587",
+			"folder": "8e63b526-955d-4cdc-f99b-1302758180db"
+		},
+		{
+			"id": "d979c688-badd-cf84-fa81-2196ea581b41",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/user/edit",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "id_user",
+					"value": "4",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495346489955,
+			"name": "User: Edit (Member)",
+			"description": "Menghapus Data Member dari Tabel User",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": [],
+			"folder": "8e63b526-955d-4cdc-f99b-1302758180db"
+		},
+		{
+			"id": "e2f06cf5-2d1a-a568-a590-e1fc36f291b4",
+			"headers": "email: andi@gmail.com\nContent-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost/api_iofficial/user/forgotPassword",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "email",
+					"value": "infomugis@gmail.com",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495346194985,
+			"name": "User: Forgot Password",
+			"description": "Melakukan recovery password member melalui email",
+			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
+			"responses": [],
+			"folder": "8e63b526-955d-4cdc-f99b-1302758180db"
+		}
+	]
+}
