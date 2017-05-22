@@ -7,7 +7,7 @@
 		{
 			"id": "4a582a85-1eec-485e-f5c5-6f3e348e3db5",
 			"name": "API Community",
-			"description": "Management User Member",
+			"description": "Mengelola Komunitas",
 			"order": [
 				"99b1fe5e-6942-0b50-b7b9-92ad9fdaeec8",
 				"0dc6901d-07f3-1de1-6fcd-c4d131de3951",
@@ -17,7 +17,7 @@
 				"c1681040-6f14-2caa-e03e-b7477a3d76be",
 				"77d6a22b-06de-501c-f618-2b54cbbf7f7e"
 			],
-			"owner": "",
+			"owner": "1629295",
 			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d"
 		},
 		{
@@ -36,11 +36,11 @@
 				"0b513a76-5cc1-8464-6b37-b172b98889f1",
 				"15cb03ef-ff35-fabb-ebf5-5d5fe104965f"
 			],
-			"owner": ""
+			"owner": "1629295"
 		}
 	],
 	"timestamp": 1495344345032,
-	"owner": "",
+	"owner": "1629295",
 	"public": false,
 	"requests": [
 		{
@@ -153,7 +153,9 @@
 			"name": "Community: Search",
 			"description": "Mencari Data Komunitas berdasarkan nama Komunitas",
 			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
-			"responses": []
+			"responses": [],
+			"folder": "4a582a85-1eec-485e-f5c5-6f3e348e3db5",
+			"folderId": null
 		},
 		{
 			"id": "15cb03ef-ff35-fabb-ebf5-5d5fe104965f",
@@ -239,7 +241,9 @@
 			"name": "Community: List (Full)",
 			"description": "Menampilkan data daftar komunitas",
 			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
-			"responses": []
+			"responses": [],
+			"folder": "4a582a85-1eec-485e-f5c5-6f3e348e3db5",
+			"folderId": null
 		},
 		{
 			"id": "7e10acd7-4bf0-7d25-2c55-e0829fc27d3d",
@@ -292,7 +296,9 @@
 			"name": "Community: Edit",
 			"description": "Menghapus Data Community dari Tabel Setting",
 			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
-			"responses": []
+			"responses": [],
+			"folder": "4a582a85-1eec-485e-f5c5-6f3e348e3db5",
+			"folderId": null
 		},
 		{
 			"id": "99b1fe5e-6942-0b50-b7b9-92ad9fdaeec8",
@@ -336,7 +342,9 @@
 			"name": "Community: Signup",
 			"description": "Registrasi Komunitas",
 			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
-			"responses": []
+			"responses": [],
+			"folder": "4a582a85-1eec-485e-f5c5-6f3e348e3db5",
+			"folderId": null
 		},
 		{
 			"id": "aee25ea6-c4c0-b32e-0f41-6824beac37f0",
@@ -389,7 +397,9 @@
 			"name": "Community: Detail",
 			"description": "Menghapus Data Member dari Tabel User",
 			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
-			"responses": []
+			"responses": [],
+			"folder": "4a582a85-1eec-485e-f5c5-6f3e348e3db5",
+			"folderId": null
 		},
 		{
 			"id": "ba1e4162-ef19-f721-c4b3-e3db6c029f57",
@@ -415,7 +425,9 @@
 			"name": "Community: Delete",
 			"description": "Menghapus Data Member dari Tabel User",
 			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
-			"responses": []
+			"responses": [],
+			"folder": "4a582a85-1eec-485e-f5c5-6f3e348e3db5",
+			"folderId": null
 		},
 		{
 			"id": "ba59c96d-bf30-49d6-2cf9-d2e86d2d6032",
@@ -474,7 +486,9 @@
 			"name": "Community: List (Start, Limit)",
 			"description": "Menampilkan data komunitas dengan inisiasi awal dan limit",
 			"collectionId": "88ee1558-b420-79f9-ebc7-aa9c908a3d4d",
-			"responses": []
+			"responses": [],
+			"folder": "4a582a85-1eec-485e-f5c5-6f3e348e3db5",
+			"folderId": null
 		},
 		{
 			"id": "c4c6117d-2808-8a09-e56a-19b2eeb8e587",

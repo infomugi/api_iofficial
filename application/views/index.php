@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title><?php echo $pageTitle; ?> - <?php echo $credit; ?></title>
+    <title><?php echo $appName; ?> <?php echo $pageTitle; ?> - <?php echo $credit; ?></title>
 
     <!-- CSS -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -26,23 +26,13 @@
                         <span class="fa fa-bars"></span>
                     </button>
                     <a href="#" class="brand">
-                        <img src="assets/images/logo.png" alt="Knowledge">
+                        <img src="assets/images/logo.png" alt="IOfficial">
                     </a>
                 </div>
                 <div class="navbar-collapse collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="./gii/index.php">
-                                API Generator
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./gii/backup.php">
-                                Backup
-                            </a>
-                        </li>                        
-                        <li>
-                           <a href="http://wefay.com" class="btn btn-success nav-btn">Kontak Kami</a>
+                           <a href="http://wefay.com" class="btn btn-success nav-btn">Contact US</a>
                        </li>
                    </ul>
                </div>
@@ -52,9 +42,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1>Rest API IOfficial</h1>
-                    <p class="lead text-muted">IOfficial Mobile Apps Documentation</p>
-                    <a href="#" class="btn btn-hero">Lihat Dokumentasi</a>
+                    <h1>Rest API <?php echo $appName; ?></h1>
+                    <p class="lead text-muted"><?php $appName; ?> Mobile Apps Documentation</p>
+                    <a href="<?php echo $documentation; ?>" class="btn btn-hero">Read Documentation</a>
                 </div>
             </div>
         </div>
@@ -97,7 +87,7 @@
         <div class="row">
            <div class="col-lg-6 col-md-6 col-sm-12 text-center">
             <div class="copyright">
-                <p>© <?php echo date('Y'); ?> <?php echo $credit; ?></p>
+                <p>© <?php echo date('Y'); ?> <?php echo $appName; ?> by <?php echo $credit; ?></p>
             </div>
         </div>
     </div>
