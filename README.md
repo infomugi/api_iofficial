@@ -27,6 +27,6 @@ Give the example
 * **Mugi Rachmat** - *Initial work* - [Infomugi](https://github.com/infomugi)
 * **Novitri Setia B** - *Initial work* - [Novitri](https://github.com/infomugi)
 
-## License
+## Documentation
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* **API Management** - [Documentation](https://documenter.getpostman.com/collection/view/1629295-88ee1558-b420-79f9-ebc7-aa9c908a3d4d#8e63b526-955d-4cdc-f99b-1302758180db)
