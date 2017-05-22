@@ -1,5 +1,5 @@
 # Rest API IOfficial Bukalapak Competition
-
+![alt text](https://github.com/infomugi/api_iofficial/blob/master/screenshot.jpg)
 API IOfficial merupakan apps mobile yang dibuat dalam rangka bukalapak competition, disini anda dapat menggunakan API milik aplikasi iofficial yang dikembangkan oleh wefay.
 
 ## Getting Started
@@ -9,9 +9,6 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 
 A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
 ```
 Give the example
 ```
