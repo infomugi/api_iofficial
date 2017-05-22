@@ -1,6 +1,6 @@
 # Rest API IOfficial Bukalapak Competition
 
-One Paragraph of project description goes here
+API IOfficial merupakan apps mobile yang dibuat dalam rangka bukalapak competition, disini anda dapat menggunakan API milik aplikasi iofficial yang dikembangkan oleh wefay.
 
 ## Getting Started
 
@@ -58,9 +58,8 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Codeigniter](https://www.codeigniter.com/) - Framework CodeIgniter
+* [RestAPI](https://github.com/chriskacerguis/codeigniter-restserver) - Codeigniter Restserver
 
 ## Contributing
 
@@ -72,7 +71,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Mugi Rachmat** - *Initial work* - [PurpleBooth](https://github.com/infomugi)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
