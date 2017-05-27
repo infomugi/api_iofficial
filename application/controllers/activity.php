@@ -19,9 +19,16 @@ class Activity extends CI_Controller {
 	}
 
 
-	public function index() 
-	{   
-		$this->load->view('home');
+	public function index()
+	{
+		$data = array(
+			'appName'=> 'IOfficial',
+			'pageTitle'=> 'Activity List',
+			'credit'=> 'Wefay Studio',
+			'documentation'=> 'https://documenter.getpostman.com/collection/view/1629295-88ee1558-b420-79f9-ebc7-aa9c908a3d4d#8e63b526-955d-4cdc-f99b-1302758180db',
+			);
+
+		$this->load->view('index', $data);
 	}
 
 	public function listMy()
