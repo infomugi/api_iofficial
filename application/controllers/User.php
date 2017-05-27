@@ -14,6 +14,7 @@ class User extends CI_Controller
     parent::__construct();
     $this->load->model('Site_model');
     $this->load->model('User_model');
+    $this->load->model('muser');
     date_default_timezone_set('Asia/Jakarta');
   }
 
@@ -468,6 +469,13 @@ public function signup()
       'ipaddress' => "",
       'active' => 1,
       'status' => 1,
+      'community_id' => "",
+      'gcm_registration_id' => $this->input->post('regId'),
+      'field_one' => "",
+      'field_two' => "",
+      'field_three' => "",
+      'field_four' => "",
+      'field_five' => "",
       );
 
 
@@ -490,6 +498,19 @@ public function signup()
   }
 
 
+}
+
+
+public function updateRegId()
+{
+  $userId = $this->input->post('userId');
+  $regId = $this->input->post('regId');
+  $data = array(
+    'gcm_registration_id' =>  $regId,
+    );
+  $this->muser->update(array('id' => $userId), $data);
+  $response["success"] = 1;
+  echo json_encode($response);
 }
 
 

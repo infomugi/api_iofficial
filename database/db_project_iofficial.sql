@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 27, 2017 at 08:06 PM
+-- Generation Time: May 27, 2017 at 08:42 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -510,20 +510,6 @@ INSERT INTO `post_like` (`id`, `created_date`, `post_id`, `user_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `relation`
---
-
-CREATE TABLE IF NOT EXISTS `relation` (
-  `id_relation` int(11) NOT NULL,
-  `created_date` datetime NOT NULL,
-  `group_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `status` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `setting`
 --
 
@@ -578,25 +564,42 @@ CREATE TABLE IF NOT EXISTS `user` (
   `active` int(11) DEFAULT NULL,
   `status` int(2) DEFAULT '0',
   `community_id` int(11) NOT NULL,
-  `reg_id` varchar(255) NOT NULL,
-  `field_one` varchar(255) NOT NULL,
-  `field_two` varchar(255) NOT NULL,
-  `field_three` varchar(255) NOT NULL,
-  `field_four` varchar(255) NOT NULL,
-  `field_five` varchar(255) NOT NULL
+  `gcm_registration_id` varchar(255) NOT NULL,
+  `email_token` varchar(255) NOT NULL,
+  `latitude` varchar(255) NOT NULL,
+  `longitude` varchar(255) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id_user`, `create_time`, `update_time`, `visit_time`, `fullname`, `gender`, `birth`, `email`, `username`, `password`, `level`, `division`, `image`, `ipaddress`, `active`, `status`, `community_id`, `reg_id`, `field_one`, `field_two`, `field_three`, `field_four`, `field_five`) VALUES
-(1, '2017-05-17 03:19:02', '2017-05-17 03:19:02', '2017-05-20 12:58:35', 'Mugi Rachmat', NULL, '2017-05-17', 'infomugi@gmail.com', 'infomugi', '21232f297a57a5a743894a0e4a801fc3', 1, 0, 'infomugi.jpg', '0', 0, 0, 0, '0', '0', '0', '0', '0', ''),
-(2, '2017-05-17 03:19:30', '2017-05-17 03:19:30', '2017-05-20 10:42:12', 'Andi Saputra', NULL, '2017-05-17', 'andi@gmail.com', 'admin', '21232f297a57a5a743894a0e4a801fc3', 2, 0, 'avatar.png', '0', 1, 0, 0, '0', '0', '0', '0', '0', ''),
-(3, '2017-05-17 03:21:13', '2017-05-17 03:21:13', '2017-05-17 03:21:13', 'Sandi Auliya', NULL, '2017-05-17', 'sandi@gmail.com', 'sandi', '21232f297a57a5a743894a0e4a801fc3', 3, 0, 'avatar.png', '0', 0, 0, 0, '0', '0', '0', '0', '0', ''),
-(4, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, 0, '0', '0', '0', '0', '0', ''),
-(5, '2017-05-17 03:22:16', '2017-05-17 03:22:16', '2017-05-17 08:35:51', 'Wahyu Wiwoho', NULL, '2017-05-17', 'wahyu@gmail.com', 'wahyu', '21232f297a57a5a743894a0e4a801fc3', 3, 0, 'avatar.png', '0', 0, 0, 0, '0', '0', '0', '0', '0', ''),
-(6, '2017-05-18 07:22:21', '2017-05-18 07:22:21', '2017-05-18 07:22:21', 'Abudin', NULL, '2017-05-18', 'abudin@gmail.com', 'abudin', '21232f297a57a5a743894a0e4a801fc3', 3, 0, 'avatar.png', '0', 0, 0, 0, '0', '0', '0', '0', '0', '');
+INSERT INTO `user` (`id_user`, `create_time`, `update_time`, `visit_time`, `fullname`, `gender`, `birth`, `email`, `username`, `password`, `level`, `division`, `image`, `ipaddress`, `active`, `status`, `community_id`, `gcm_registration_id`, `email_token`, `latitude`, `longitude`) VALUES
+(1, '2017-05-17 03:19:02', '2017-05-17 03:19:02', '2017-05-20 12:58:35', 'Mugi Rachmat', NULL, '2017-05-17', 'infomugi@gmail.com', 'infomugi', '21232f297a57a5a743894a0e4a801fc3', 1, 0, 'infomugi.jpg', '0', 0, 0, 0, '0', '', '', ''),
+(2, '2017-05-17 03:19:30', '2017-05-17 03:19:30', '2017-05-20 10:42:12', 'Andi Saputra', NULL, '2017-05-17', 'andi@gmail.com', 'admin', '21232f297a57a5a743894a0e4a801fc3', 2, 0, 'avatar.png', '0', 1, 0, 0, '0', '', '', ''),
+(3, '2017-05-17 03:21:13', '2017-05-17 03:21:13', '2017-05-17 03:21:13', 'Sandi Auliya', NULL, '2017-05-17', 'sandi@gmail.com', 'sandi', '21232f297a57a5a743894a0e4a801fc3', 3, 0, 'avatar.png', '0', 0, 0, 0, '0', '', '', ''),
+(4, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '', NULL, NULL, NULL, NULL, NULL, NULL, 0, '0', '', '', ''),
+(5, '2017-05-17 03:22:16', '2017-05-17 03:22:16', '2017-05-17 08:35:51', 'Wahyu Wiwoho', NULL, '2017-05-17', 'wahyu@gmail.com', 'wahyu', '21232f297a57a5a743894a0e4a801fc3', 3, 0, 'avatar.png', '0', 0, 0, 0, '0', '', '', ''),
+(6, '2017-05-18 07:22:21', '2017-05-18 07:22:21', '2017-05-18 07:22:21', 'Abudin', NULL, '2017-05-18', 'abudin@gmail.com', 'abudin', '21232f297a57a5a743894a0e4a801fc3', 3, 0, 'avatar.png', '0', 0, 0, 0, '0', '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_community`
+--
+
+CREATE TABLE IF NOT EXISTS `user_community` (
+  `id_relation` int(11) NOT NULL,
+  `created_date` datetime NOT NULL,
+  `group_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `status` int(11) NOT NULL,
+  `field_one` varchar(255) NOT NULL,
+  `field_two` varchar(255) NOT NULL,
+  `field_three` text NOT NULL,
+  `field_four` varchar(255) NOT NULL,
+  `field_five` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Indexes for dumped tables
@@ -627,12 +630,6 @@ ALTER TABLE `division`
   ADD PRIMARY KEY (`id_division`);
 
 --
--- Indexes for table `relation`
---
-ALTER TABLE `relation`
-  ADD PRIMARY KEY (`id_relation`);
-
---
 -- Indexes for table `setting`
 --
 ALTER TABLE `setting`
@@ -643,6 +640,12 @@ ALTER TABLE `setting`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id_user`);
+
+--
+-- Indexes for table `user_community`
+--
+ALTER TABLE `user_community`
+  ADD PRIMARY KEY (`id_relation`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -669,11 +672,6 @@ ALTER TABLE `category_sub`
 ALTER TABLE `division`
   MODIFY `id_division` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `relation`
---
-ALTER TABLE `relation`
-  MODIFY `id_relation` int(11) NOT NULL AUTO_INCREMENT;
---
 -- AUTO_INCREMENT for table `setting`
 --
 ALTER TABLE `setting`
@@ -683,6 +681,11 @@ ALTER TABLE `setting`
 --
 ALTER TABLE `user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `user_community`
+--
+ALTER TABLE `user_community`
+  MODIFY `id_relation` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
