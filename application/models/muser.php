@@ -8,19 +8,18 @@ class MUser extends CI_Model{
 	var $order = array('id' => 'desc'); // default order 
 
 
-    function __construct(){
-        parent::__construct();
-        $this->load->database();
-    }
-	
+	function __construct(){
+		parent::__construct();
+		$this->load->database();
+	}
 
-   function getId()
+	function getId()
 	{	
 		$query = $this->db->query("SELECT max(id) as userId ,password FROM user");
 		return	 $query->result(); 
 	}
 
-public function getIdRelation($userId1,$userId2)
+	public function getIdRelation($userId1,$userId2)
 	{	
 		$query = $this->db->query("SELECT id FROM user_relasi WHERE user_id1 = '$userId1' AND user_id2 = '$userId2' ");
 		$tes = $query->row(); 
@@ -28,20 +27,20 @@ public function getIdRelation($userId1,$userId2)
 		return $r; 
 	}
 
-    public function listUsers($limit, $start) 
-    {
-    $query = $this->db->query("SELECT * from user ORDER BY name
-                                LIMIT 0,10 ");
-    return   $query->result(); 
-   }
+	public function listUsers($limit, $start) 
+	{
+		$query = $this->db->query("SELECT * from user ORDER BY name
+			LIMIT 0,10 ");
+		return   $query->result(); 
+	}
 
 
-    public function contactList($limit, $start,$userId) 
-    {
-    $query = $this->db->query("SELECT * from user WHERE id <> '$userId' ORDER BY fullname
-                                LIMIT $start,$limit ");
-    return   $query->result(); 
-   }
+	public function contactList($limit, $start,$userId) 
+	{
+		$query = $this->db->query("SELECT * from user WHERE id <> '$userId' ORDER BY fullname
+			LIMIT $start,$limit ");
+		return   $query->result(); 
+	}
 
 
 
@@ -79,7 +78,7 @@ public function getIdRelation($userId1,$userId2)
 		$this->db->delete($this->table);
 	}
 
-public function getRegIdComment($postId)
+	public function getRegIdComment($postId)
 	{	
 		$query = $this->db->query("select gcm_registration_id from user where id IN (SELECT user_id from post where id ='$postId')");
 		$tes = $query->row(); 
@@ -91,7 +90,7 @@ public function getRegIdComment($postId)
 		$this->db->where('id', $id);
 		return $this->db->get($this->table);
 	}	
-public function findByPin($id){
+	public function findByPin($id){
 		$this->db->where('email_token', $id);
 		return $this->db->get($this->table);
 	}	

@@ -10,10 +10,10 @@ class mmail extends CI_Model {
 		$ci = get_instance();
 		$ci->load->library('email');
 		$config['protocol'] = "smtp";
-			$config['smtp_host'] = "srv24.niagahoster.com";
-			$config['smtp_port'] = "465";
-			$config['smtp_user'] = "sawarga@wefay.com";
-			$config['smtp_pass'] = "cFPNQ24[{&e_";
+		$config['smtp_host'] = "srv24.niagahoster.com";
+		$config['smtp_port'] = "465";
+		$config['smtp_user'] = "sawarga@wefay.com";
+		$config['smtp_pass'] = "cFPNQ24[{&e_";
 
 		//$config['smtp_host'] = "ssl://smtp.gmail.com";
 		//$config['smtp_port'] = "465";

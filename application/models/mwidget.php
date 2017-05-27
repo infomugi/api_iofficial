@@ -94,21 +94,21 @@ class mwidget extends CI_Model {
 	}
 
 	public function filter($text){
-	$daftarkatakotor = "anjing,sialan,tolol,bego,idiot,setan,iblis,bagong,babi,sia,goblog,goblok,anjink,berengsek,jadah,bajingan,kontol,kelamin"; 
-	$katasensor = "***"; 
-	    $kalimat = preg_replace('/[ \t]+/', ' ', preg_replace('/\s*$^\s*/m', ' ', $text));
-	    $katas = array();
-	    $katas = explode(" ",$kalimat); 
-	    $katakotor = explode(",",$daftarkatakotor);
-	    $i = 0;
-	    $kata = "";
-	    for ($i=0;$i<count($katas);$i++){
-	    	$kata = $katas[$i];
-	    	if (in_array(strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $katas[$i])),$katakotor)){
-	    		$kalimat = str_replace($kata,$katasensor,$kalimat);     
-	    	}
-	    }
-	    return $kalimat;
+		$daftarkatakotor = "anjing,sialan,tolol,bego,idiot,setan,iblis,bagong,babi,sia,goblog,goblok,anjink,berengsek,jadah,bajingan,kontol,kelamin"; 
+		$katasensor = "***"; 
+		$kalimat = preg_replace('/[ \t]+/', ' ', preg_replace('/\s*$^\s*/m', ' ', $text));
+		$katas = array();
+		$katas = explode(" ",$kalimat); 
+		$katakotor = explode(",",$daftarkatakotor);
+		$i = 0;
+		$kata = "";
+		for ($i=0;$i<count($katas);$i++){
+			$kata = $katas[$i];
+			if (in_array(strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $katas[$i])),$katakotor)){
+				$kalimat = str_replace($kata,$katasensor,$kalimat);     
+			}
+		}
+		return $kalimat;
 	}	
 
 }

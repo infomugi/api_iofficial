@@ -41,7 +41,7 @@ class MLike extends CI_Model{
 
 
     public function deleteLike($userId,$postId){
-       
+     
         $this->db->where(array('user_id' => $userId,'post_id' => $postId));
         $this->db->delete($this->table);
     }

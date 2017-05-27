@@ -9,14 +9,11 @@ class MComment extends CI_Model{
         parent::__construct();
         $this->load->database();
     }
-      
-
 
     public function listComment($limit, $start,$postId) {
-        
         $query = $this->db->query("SELECT c.*,u.avatar,u.fullname FROM post_comment c, user u, post p WHERE  c.user_id = u.id AND p.id = '$postId' AND c.post_id = p.id  order by created_date desc ");
         return   $query->result(); 
-   }
+    }
 
     public function save($data)
     {
@@ -25,7 +22,7 @@ class MComment extends CI_Model{
     }
 
 
- public function totalComment($id)
+    public function totalComment($id)
     {   
         $query = $this->db->query("SELECT count(id) as total FROM post_comment where post_id=".$id);
         $data = $query->row(); 
@@ -42,6 +39,6 @@ class MComment extends CI_Model{
         return $this->db->affected_rows();
     }  
 
-  
+
 
 }

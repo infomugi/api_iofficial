@@ -9,8 +9,6 @@ class MMemberRooms extends CI_Model{
         parent::__construct();
         $this->load->database();
     }
-      
-   
 
     public function getId()
     {   
@@ -24,6 +22,6 @@ class MMemberRooms extends CI_Model{
         return $this->db->insert_id();
     }
 
-  
+
 
 }

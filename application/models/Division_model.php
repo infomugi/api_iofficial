@@ -18,14 +18,14 @@ class Division_model extends CI_Model
     }
 
     // datatables
-        function json() {
-            $this->datatables->select('id_division,name,description,status');
-            $this->datatables->from('division');
+    function json() {
+        $this->datatables->select('id_division,name,description,status');
+        $this->datatables->from('division');
         //add this line for join
         //$this->datatables->join('table2', 'division.field = table2.field');
-            $this->datatables->add_column('action', anchor(site_url('division/read/$1'),'Read')." | ".anchor(site_url('division/update/$1'),'Update')." | ".anchor(site_url('division/delete/$1'),'Delete','onclick="javasciprt: return confirm(\'Are You Sure ?\')"'), 'id_division');
-            return $this->datatables->generate();
-        }
+        $this->datatables->add_column('action', anchor(site_url('division/read/$1'),'Read')." | ".anchor(site_url('division/update/$1'),'Update')." | ".anchor(site_url('division/delete/$1'),'Delete','onclick="javasciprt: return confirm(\'Are You Sure ?\')"'), 'id_division');
+        return $this->datatables->generate();
+    }
 
     
     /* ---------------------------------------------------------------- 
@@ -56,10 +56,10 @@ class Division_model extends CI_Model
     ---------------------------------------------------------------- */
     function get_total_rows($keyword = NULL) {
         $this->db->like('id_division', $keyword);
-	$this->db->or_like('name', $keyword);
-	$this->db->or_like('description', $keyword);
-	$this->db->or_like('status', $keyword);
-	$this->db->from($this->table);
+        $this->db->or_like('name', $keyword);
+        $this->db->or_like('description', $keyword);
+        $this->db->or_like('status', $keyword);
+        $this->db->from($this->table);
         return $this->db->count_all_results();
     }
 
@@ -72,10 +72,10 @@ class Division_model extends CI_Model
     function get_limit_data($limit, $start = 0) {
         $this->db->order_by($this->id, $this->order);
         $this->db->like('id_division');
-	$this->db->or_like('name');
-	$this->db->or_like('description');
-	$this->db->or_like('status');
-	$this->db->limit($limit, $start);
+        $this->db->or_like('name');
+        $this->db->or_like('description');
+        $this->db->or_like('status');
+        $this->db->limit($limit, $start);
         return $this->db->get($this->table)->result();
     }
 
@@ -89,10 +89,10 @@ class Division_model extends CI_Model
     function get_search($limit, $start, $keyword) {
         $this->db->order_by($this->id, $this->order);
         $this->db->like('id_division', $keyword);
-	$this->db->or_like('name', $keyword);
-	$this->db->or_like('description', $keyword);
-	$this->db->or_like('status', $keyword);
-	$this->db->limit($limit, $start);
+        $this->db->or_like('name', $keyword);
+        $this->db->or_like('description', $keyword);
+        $this->db->or_like('status', $keyword);
+        $this->db->limit($limit, $start);
         return $this->db->get($this->table)->result();
     }    
 

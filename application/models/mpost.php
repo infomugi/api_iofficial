@@ -9,26 +9,25 @@ class MPost extends CI_Model{
         parent::__construct();
         $this->load->database();
     }
-      
+
 
 
     public function listPost($limit, $start, $userId) {
-        
         $query = $this->db->query("SELECT t.*, u.fullname as u_name, u.avatar as u_image 
-                                    FROM post t, user u 
-                                    WHERE u.id = t.user_id  ORDER BY t.created_date DESC
-                                    LIMIT $start,$limit");
+            FROM post t, user u 
+            WHERE u.id = t.user_id  ORDER BY t.created_date DESC
+            LIMIT $start,$limit");
         return   $query->result(); 
-   }
+    }
 
     public function listMyPost($limit, $start,$userId) {
-        
+
         $query = $this->db->query("SELECT t.*, u.fullname as u_name, u.avatar as u_image 
-                                    FROM post t, user u 
-                                    WHERE u.id = t.user_id AND u.id = '$userId' ORDER BY t.created_date DESC
-                                    LIMIT $start,$limit");
+            FROM post t, user u 
+            WHERE u.id = t.user_id AND u.id = '$userId' ORDER BY t.created_date DESC
+            LIMIT $start,$limit");
         return   $query->result(); 
-   }
+    }
 
     function getId()
     {   
@@ -36,7 +35,7 @@ class MPost extends CI_Model{
         return   $query->result(); 
     }
 
-     function getImageName($id)
+    function getImageName($id)
     {   
         $query = $this->db->query("SELECT image FROM post where id =".$id);
         $tes = $query->row(); 
@@ -57,6 +56,6 @@ class MPost extends CI_Model{
     }
 
 
-  
+
 
 }
